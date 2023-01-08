@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000c4f;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+  background: #e5e5e5;
+  text-align: end;
+  padding-top: 15px;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.calculadora{
+  box-shadow: 0px 4px 10px rgbs(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background: #fff;
+}
+
+input[type="button"] {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background: #eff6ee;
+  border-radius: 20%;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 30px;
+  outline: none;
+  transition: 0.3s;
+  position: relative;
+}
+
+input[type="button"]:hover {
+  background: #e5e5e5;
+}
+
+input[type="button"]:hover.operadores-basicos {
+  background: #eff6ee;
+}
+
+.resultado {
+  position: relative;
+}
+
+.resultado input[type="text"] {
+  min-height: 250px;
+  width: 375px;
+  border: none;
+  outline: none;
+  background: #eff6ee;
+  display: grid;
+  text-align: end;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  justify-content: end;
+  align-items: end;
+  padding: 30px 20px 0;
+  border-radius: 20px 20px 0 0;
+}
+
+#igual:hover {
+  background: #115930;
+}
+
+/* Estruturação números */
+
+.teclas {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Números */
+
+input.operadores-basicos {
+  background: #e5e5e5;
+}
+
+#igual {
+  background: #48FDA1;
+}
+
+#del {
+  font-size: 25px;
+}
